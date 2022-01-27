@@ -13,6 +13,6 @@ int main(int argc, char const *argv[])
     cout << "Hola, mi nombre es " <<nombre;
     cout << endl;
 
-    
+
     return 0;
 }
