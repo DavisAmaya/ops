@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     cin >> subtotal;
 
     //Proceso
-    total = subtotal (subtotal * 0.15);
+    total = subtotal + (subtotal * 0.15);
 
     //Salida
     cout << endl;
