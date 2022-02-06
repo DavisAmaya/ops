@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
     cout << "Es una factura exenta? escriba S o N: ";
     cin >> facturaExenta;
     
+    //Proceso
     if (facturaExenta == 'S' || facturaExenta == 's')
     {
         calculoImpuesto = 0;
@@ -37,9 +38,7 @@ int main(int argc, char** argv) {
         cout << "La letra ingresada es incorrecta";
     }
 
-    
-
-    //Proceso
+    cout << endl; 
     calculoDescuento = (subtotal * descuento) / 100;
     total = subtotal - calculoDescuento + calculoImpuesto;
 
