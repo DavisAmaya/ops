@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
 	}	
     else
     {
-       calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
+        calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
     }
 
     cout << endl; 
