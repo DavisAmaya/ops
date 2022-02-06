@@ -26,8 +26,8 @@ int main(int argc, char** argv) {
     //Proceso
     if (facturaExenta == 'S' || facturaExenta == 's')
     {
-		calculoImpuesto = 0;
-	}	
+	    calculoImpuesto = 0;
+    }	
     else
     {
         calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
