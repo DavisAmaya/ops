@@ -26,16 +26,11 @@ int main(int argc, char** argv) {
     //Proceso
     if (facturaExenta == 'S' || facturaExenta == 's')
     {
-        calculoImpuesto = 0;
-    }
-    
-    if (facturaExenta == 'N' || facturaExenta == 'n')
-    {
-        calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
-    }
+		calculoImpuesto = 0;
+	}	
     else
     {
-        cout << "La letra ingresada es incorrecta";
+       calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
     }
 
     cout << endl; 
@@ -43,7 +38,6 @@ int main(int argc, char** argv) {
     total = subtotal - calculoDescuento + calculoImpuesto;
 
     //Salida
-    cout << endl;
     cout << "El total a pagar es: " << total;
 	return 0;
-
+}
