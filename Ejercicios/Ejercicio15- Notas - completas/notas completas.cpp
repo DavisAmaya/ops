@@ -18,6 +18,12 @@ int main(int argc, char const *argv[])
     if (nota >= 96 && nota <= 100)
     {
         cout << "Obtuviste una A++ "; 
+        
+    }
+    
+    if (nota >= 91 && nota <= 95)
+    {
+        cout << "Obtuviste una A+ "; 
     }
 
     if (nota >= 91 && nota <= 95)
