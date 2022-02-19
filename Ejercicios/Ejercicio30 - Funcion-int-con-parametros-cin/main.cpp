@@ -28,7 +28,5 @@ int main(int argc, char const *argv[])
     cout << "El resultado de la resta es: " << restar (numero1, numero2);
     cout << endl;
 
-
-    sumar (8, 9);
     return 0;
 }
