@@ -19,7 +19,9 @@ int multipilicar ( int a, int b )
 }
 int dividir ( int a, int b )
 {
-
+    if (b == 0){
+        throw "No se puede dividir entre 0";
+    }
     return a / b;
 }
 
