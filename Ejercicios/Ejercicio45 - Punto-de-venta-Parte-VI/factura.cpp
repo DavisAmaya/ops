@@ -35,6 +35,6 @@ void imprimirFactura ()
     cout << "El total a pagar es: " << totalCompra;
     cout << endl;
     cout << endl;
-    
+
     system ("pause");
 }
