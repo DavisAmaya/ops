@@ -6,22 +6,56 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int caraDado; //valores aleatorios del juego
-    int tiroDado; // contador de los tiros del juego
-
-    srand (time (NULL)); //semilla (lo primero)
-
-    cout << "**************************************************" << endl;
-    cout << "             Bienvenido al juego                  " << endl; 
-    cout << "**************************************************" << endl;
-    cout << "Cara" << endl;
-
-    for (caraDado = 1; caraDado < 7; caraDado++)
-    {
-        caraDado = rand () % 6 + 1;
-
-        cout  << caraDado << frecuenciaJuego << endl;
-    }
+    int dado1;
+    int i;   
+    int dado2;
+    string lanzar;
+    int tiroDado;
     
+    tiroDado = dado1 + dado2;
+
+    while (true)
+    {
+        cout << "**************************************************" << endl;
+        cout << "             Bienvenido al juego                  " << endl; 
+        cout << "**************************************************" << endl << endl;
+        
+        cout<<"Presione cualquier tecla para lanzar los dados: "<< endl;
+        cin >> lanzar;
+
+        system ("cls");
+        for (int i = 0; i <= 3; i++)
+        {
+        srand (time (NULL));
+        dado1 = rand()% 6+1;
+        dado2 = rand()% 6+1;  
+        }
+        
+        cout << "Dado 1: "<< dado1 << endl;
+        cout << "Dado 2: "<< dado2 <<endl;
+                
+        cout<<"La suma de los dados es: "<< tiroDado << endl <<endl;
+        
+        if (tiroDado == 4 || tiroDado == 6 || tiroDado == 8)
+        {
+            cout<< endl << "***********************************"<< endl;
+            cout<< endl << "       Felicidades, haz ganado     "<< endl;
+            cout<< endl << "***********************************"<< endl;
+            break;
+        }
+        if (tiroDado == 2 || tiroDado == 12)
+        {
+            cout<< endl << "***********************************"<< endl;
+            cout<< endl << "       Lo siento, haz perdido     "<< endl;
+            cout<< endl << "***********************************"<< endl;
+            
+            break;
+        }
+        
+        system("pause");
+        system ("cls");
+    }
+
     return 0;
 }
+    
