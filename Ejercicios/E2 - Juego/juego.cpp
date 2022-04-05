@@ -37,8 +37,8 @@ void inicializarArreglo()
 
 void dificultad() 
 {
-	cout<<"\n\n Elija una dificultad para alterar la velocidad \n 1: Facil \n\n 2: Media \n\n 3: Dificil"<<endl;
-	cin>>d;
+	cout << "\n\n Elija una dificultad para alterar la velocidad \n 1: Facil \n\n 2: Media \n\n 3: Dificil" <<endl;
+	cin >> d;
 	switch(d){
 		case 1:
 			dif=80;

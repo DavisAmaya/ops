@@ -8,7 +8,8 @@ int main(int argc, char const *argv[])
 {
 	char tecla;
 	int puntos=0;
-	int xPos=30, yPos=20;
+	int xPos=30
+    int yPos=20;
 
 	inicializarArreglo();
 	dificultad();	
@@ -16,7 +17,7 @@ int main(int argc, char const *argv[])
 	cout << puntos;
 	pintar();
 	gotoxy(xPos, yPos);
-    cout<<(char)4;	
+    cout << (char) 4;	
 
 	while(tecla != 27 && gameover() )
 	{
@@ -25,11 +26,11 @@ int main(int argc, char const *argv[])
 
 	if ( !gameover())
 	{
-		MessageBoxA(NULL,"Has Perdido","Perdedor", MB_OK);
+		MessageBoxA( NULL , "Has Perdido", "Perdedor", MB_OK);
 		system("cls");
 	}
 
-	system("pause>NULL");
+	system("pause > NULL");
 	return 0;
 }
 
