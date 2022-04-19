@@ -30,6 +30,8 @@ int main(int argc, char const *argv[])
         cout << numero [i][0] << "  "<< numero [i][1] << endl;
     }
 
+    suma = numero;
+    cout << "Total suma: " << suma << endl;
 
     return 0;
 }
