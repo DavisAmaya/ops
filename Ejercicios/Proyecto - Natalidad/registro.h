@@ -1,0 +1,13 @@
+void cambio(char a[]);
+void ingresar();
+void vacio();
+void adopcion();
+void gotoxy(int x,int y);
+void dibujarCuadro(int x1,int y1,int x2,int y2);
+void menu();
+void CursorOn(bool visible, DWORD size);
+void CursorOff();
+void limpia();
+void nacimientos();
+void listar();
+void eliminar();
