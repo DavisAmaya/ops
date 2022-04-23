@@ -4,9 +4,6 @@
 
 using namespace std;
 
-
-
-//FUNCION PRINCIPAL MAIN: ES LA PRIMER FUNCI?N QUE EJECUTA EL PROGRAMA
 int main(){
 	system("mode con: cols=80 lines=25");
 	system("COLOR 30");
