@@ -2,6 +2,14 @@
 
 using namespace std;
 
+string productos [5][2] = {
+    {"001", "iPhone x"},
+    {"002", "Laptop Dell"},
+    {"003", "Monitor Samsung"},
+    {"004", "Mause"},
+    {"005", "HeadSet"},
+};
+
 int main(int argc, char const *argv[])
 {
     int opcion = 0;
@@ -27,9 +35,16 @@ int main(int argc, char const *argv[])
 
         switch (opcion) 
         {
-        case 1:
-            cout << "Escogiste 1  ";
-            break;
+        case 1:{
+            cout << endl;
+            cout << "Listado de producto" << endl;
+            cout << "********************" << endl;
+
+            for (int i = 0; i < 5; i++)
+            {
+                cout << productos [i][0] << " " << productos [i][1] << endl;
+            }
+        }
         case 2:
             cout << "Escogiste 2  ";
             break;
