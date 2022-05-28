@@ -1,13 +1,14 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-string productos [5][2] = {
-    {"001", "iPhone x"},
-    {"002", "Laptop Dell"},
-    {"003", "Monitor Samsung"},
-    {"004", "Mause"},
-    {"005", "HeadSet"},
+string productos [5][3] = {
+    {"001", "iPhone x", "0"},
+    {"002", "Laptop Dell", "5"},
+    {"003", "Monitor Samsung", "2"},
+    {"004", "Mause", "100"},
+    {"005", "HeadSet", "25"},
 };
 
 void listarProductos ()
@@ -16,11 +17,55 @@ void listarProductos ()
     cout << endl;
     cout << "Listado de productos" << endl;
     cout << "*********************" << endl;
+    cout << "Codigo, Descripcion y Existencia" << endl;
 
     for (int i = 0; i < 5; i++)
     {
-        cout << productos [i][0] << "   " << productos [i][1] << endl;
+        cout << productos [i][0] << "   " << productos [i][1] << "   " << productos [i][2]<< endl;
     }
+}
+
+void movimientoInventario(string codigo, int cantidad, string tipoMovimiento)
+{
+    for (int i = 0; i < 5; i++)
+    {
+        if (productos [i][0] == codigo)
+        {
+            if (tipoMovimiento == "+")
+            {
+                productos [i][2] = stoi (productos [i][2]) + cantidad;
+            } else {
+                productos [i][2] = stoi (productos [i][2]) - cantidad;
+            }
+            
+            
+        }
+        
+    }
+    
+    
+}
+
+
+
+
+void ingresoDeInventario ()
+{   
+    string codigo = "";
+    int cantidad = 0;
+
+    system ("cls"); 
+    cout << endl;
+    cout << "Ingreso de productos al inventario" << endl;
+    cout << "**********************************" << endl;
+    cout << "Ingrese el codigo del producto: ";
+    cin >> codigo;
+    cout << endl;
+    cout << "Ingrese la cantidad del producto: ";
+    cin >> cantidad;
+    cout << endl;
+
+    movimientoInventario (codigo, cantidad, "+");
 }
 
 int main(int argc, char const *argv[])
@@ -53,7 +98,7 @@ int main(int argc, char const *argv[])
             break;
         
         case 2:
-            cout << "Escogiste 2  ";
+            ingresoDeInventario ();
             break;
         case 3:
             cout << "Escogiste 3  ";
