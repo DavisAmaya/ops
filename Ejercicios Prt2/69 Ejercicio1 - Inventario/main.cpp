@@ -21,7 +21,7 @@ void listarProductos ()
 
     for (int i = 0; i < 5; i++)
     {
-        cout << productos [i][0] << "   " << productos [i][1] << "   " << productos [i][2]<< endl;
+        cout << productos [i][0] << "  |  " << productos [i][1] << "  |  " << productos [i][2]<< endl;
     }
 }
 
@@ -33,9 +33,9 @@ void movimientoInventario(string codigo, int cantidad, string tipoMovimiento)
         {
             if (tipoMovimiento == "+")
             {
-                productos [i][2] = stoi (productos [i][2]) + cantidad;
+                productos [i][2] = to_string (stoi (productos [i][2]) + cantidad);
             } else {
-                productos [i][2] = stoi (productos [i][2]) - cantidad;
+                productos [i][2] = to_string (stoi (productos [i][2]) - cantidad);
             }
             
             
@@ -66,6 +66,25 @@ void ingresoDeInventario ()
     cout << endl;
 
     movimientoInventario (codigo, cantidad, "+");
+}
+
+void salidaDeInventario ()
+{   
+    string codigo = "";
+    int cantidad = 0;
+
+    system ("cls"); 
+    cout << endl;
+    cout << "Salida de productos del inventario" << endl;
+    cout << "**********************************" << endl;
+    cout << "Ingrese el codigo del producto: ";
+    cin >> codigo;
+    cout << endl;
+    cout << "Ingrese la cantidad del producto: ";
+    cin >> cantidad;
+    cout << endl;
+
+    movimientoInventario (codigo, cantidad, "-");
 }
 
 int main(int argc, char const *argv[])
@@ -101,7 +120,7 @@ int main(int argc, char const *argv[])
             ingresoDeInventario ();
             break;
         case 3:
-            cout << "Escogiste 3  ";
+            salidaDeInventario ();
             break;
             
         default:
