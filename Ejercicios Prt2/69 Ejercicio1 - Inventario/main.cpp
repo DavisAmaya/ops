@@ -86,6 +86,7 @@ void salidaDeInventario ()
 
     movimientoInventario (codigo, cantidad, "-");
 }
+
 void ajustePositivo ()
 {   
     string codigo = "";
@@ -104,6 +105,7 @@ void ajustePositivo ()
 
     movimientoInventario (codigo, cantidad, "+");
 }
+
 void ajusteNegativo ()
 {   
     string codigo = "";
