@@ -17,9 +17,51 @@ int main(int argc, char const *argv[])
 {
     cargarLibros ();
 
-    for (int i = 0; i < 2; i++)
+    bool salir = false;
+
+    while (salir == false)
     {
-        cout << libros [i][1]; 
+        string buscar = "";
+        system ("cls");
+        cout << "Ingrese la descripcion del libro que busca: ";
+        cin >> buscar;
+
+        //Busqueda
+
+        for (int i = 0; i < 2; i++)
+        {
+            string libro = libros [i][1];
+
+            if (libro.find(buscar) != string ::npos)
+            {
+                cout << "Libro encontrado: " << libro << endl;
+                salir = true;
+            }
+            
+        }
+        
+
+        if (buscar == false)
+        {
+            char continuar = 'n';
+            while (true)
+            {
+                system ("cls");
+                cout << "No se encuentra el libro que busca. Desea continuar? s/n";
+                cin >> continuar;
+
+                if (continuar == 's' || continuar == 'S'){
+                    break;
+                } else {
+                    if (continuar == 'n' || continuar == 'N')
+                    salir = true;
+                    break;
+                }
+            }
+            
+        }
+        
+
     }
     
 
