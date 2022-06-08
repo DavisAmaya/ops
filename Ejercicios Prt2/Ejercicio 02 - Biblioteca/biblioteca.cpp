@@ -32,9 +32,13 @@ int main(int argc, char const *argv[])
         for (int i = 0; i < 2; i++)
         {
             string libro = libros [i][1];
-            transform (Libro.begin(), Libro.end (), Libro.begin (), ::tolower);
+            string libroEnminnuscula = libro;
 
-            if (libro.find(buscar) != string ::npos)
+            // transformamos a minuscula los string  buscar y libro
+            transform (libroEnminnuscula.begin(), libroEnminnuscula.end (), libroEnminnuscula.begin (), ::tolower);
+            transform (buscar.begin(), buscar.end (), buscar.begin (), ::tolower);
+
+            if (libroEnminnuscula.find(buscar) != string ::npos)
             {
                 cout << "Libro encontrado: " << libro << endl;
                 salir = true;
