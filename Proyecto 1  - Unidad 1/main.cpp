@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
         {
             system ("cls");
             snake();
-			cout << endl;
+		    cout << endl;
             system ("pause");
         }
 
