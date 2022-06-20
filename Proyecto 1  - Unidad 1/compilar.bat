@@ -1,1 +1,1 @@
-g++ ./main.cpp ./startShip.cpp ./snake.cpp  -o main.exe
+g++ ./proyecto.cpp ./starShip.cpp ./snake.cpp  -o proyecto.exe
