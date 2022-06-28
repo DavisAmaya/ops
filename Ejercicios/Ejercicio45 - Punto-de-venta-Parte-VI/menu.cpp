@@ -10,8 +10,7 @@ void menu ()
     int opcion = 0;
 
     while (true)
-    {
-        system ("cls");
+    {   system ("cls");
         cout << "********";
         cout << "  MENU  ";
         cout << "********";
