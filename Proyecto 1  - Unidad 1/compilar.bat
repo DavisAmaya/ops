@@ -1,1 +1,0 @@
-g++ ./proyecto.cpp ./starShip.cpp ./snake.cpp  -o proyecto.exe
