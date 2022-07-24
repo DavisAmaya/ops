@@ -1,11 +1,14 @@
-#include<iostream>   
+#include<iostream>
+
 #include<windows.h>
+
 #include "juego.h" 
 
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
+	
 	char tecla;
 	int puntos=0;
 	int xPos=30
