@@ -1,28 +1,46 @@
-#include <iostream>   
+#include <iostream>  
+
 #include <windows.h>
-#include <conio.h>   
+
+#include <conio.h> 
+
 #include <stdlib.h>
+
 #include <time.h>
 
 using namespace std;  
 
 #define ARRIBA 72
+
 #define IZQUIERDA 75
-#define ABAJO 80      
+
+#define ABAJO 80  
+
 #define DERECHA 77
+
 #define ESC 27
 
 
 int Puntos;
+
 int cuerpo[200][2];
+
 int n=1;
+
 int tam = 3;
+
 int x=10, y=12;
-int dir=3;           
+
+int dir=3; 
+
 int xc=30, yc=20;
+
 int xxc= 40, yyc=18;
+
 int d;
+
 int dif;
+
 double tiempo;
 
 
