@@ -3,10 +3,12 @@
 using namespace std;
 
 int main(int argc, char const *argv[])
+    
 {
     int opcion = 0;
 
     while (true)
+        
     {
         cout << "****" << endl;
         cout << "MENU" << endl;
