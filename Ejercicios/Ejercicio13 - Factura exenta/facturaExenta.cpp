@@ -4,8 +4,9 @@
 
 using namespace std;
 
-int main(int argc, char** argv) {
-	// Datos de entrada
+int main(int argc, char** argv)
+	{
+
     double subtotal = 0;
     double total = 0;
     double impuesto = 0.15;
